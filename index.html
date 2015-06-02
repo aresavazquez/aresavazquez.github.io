@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Thumbnail Grid with Expanding Preview</title>
+		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
+		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+		<!--link rel="shortcut icon" href="../favicon.ico"--> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container intro-effect-sidefixed">
+			<!-- Top Navigation -->
+			<header class="header">
+				<div class="bg-img"><img src="images/avatar.jpg" alt="Background Image" /></div>
+			</header>
+			<button class="trigger" data-info=""><span>Trigger</span></button>
+			<article class="content">
+				<div class="title">
+					<h1 class="name">Ares Alberto Vázquez B.<br><span>Diseñador Gráfico y Web</span></h1>
+					<!--nav class="codrops-demos">
+						<a href="#">Home</a>
+						<a href="#">Diseño Web</a>
+						<a href="#">Ilustraciones</a>
+						<a href="#">Retoque digital</a>
+						<a href="#">Contacto</a>
+					</nav-->
+					<p class="subline">Egresado de la Universidad del Tepeyac</p>
+					<p class="subline">Titulado con No. de Cédula Profesional 09126861</p>
+					<p>Con otros estudios en:<br>* Posgrado en Publicidad corporativa (terminado).<br>* Escuela Digital, diplomado en diseño de páginas web optimizadas para dispositivos móviles.<br>* Makerz diplomado en html5.</p>
+				</div>
+				<div class="estudios">
+					<p class="diplomados">Apasionado del trabajo en equipo con profesionistas que aporten dinámicas que impacten positivamente en nuestra sociedad, a través de; innovación, creatividad y tecnología. Para así incrementar mis conocimientos y poder agregar un valor productivo a la empresa.</p>
+					
+				</div>
+			</article>
+			<div class="fixed">
+				<video autoplay loop controls tabindex="0">
+  					<source src="./images/grafitti.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				</video>
+			</div>
+			<div class="section">
+				<nav class="codrops-demos">
+					<a href="#container">About me</a>
+					<a href="#web">Diseño web</a>
+					<a href="#ilustrcion">Ilustraciones y Retoque digital</a>
+					<a href="#contacto">Contacto</a>
+				</nav>
+				<p id="web" class="nameSection">Diseño Web</p>
+				<p>Apasionado del trabajo en equipo con profesionistas que aporten dinámicas que impacten positivamente en nuestra sociedad, a través de; innovación, creatividad y tecnología. Para así incrementar mis conocimientos y poder agregar un valor productivo a la empresa.</p>
+			</div>
+			<!-- Codrops top bar -->
+			<div class="main">
+				<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="http://makerz.digitaldealers.mx/BeTec/" target="blank" data-largesrc="./images/btec-img.png" data-title="BeTec Tecnológico de Monterrey" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/BeTec-FRONT.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://lymbik.com/visuallatina/web4/" data-largesrc="images/visual.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							<img src="images/logos/Visual-Latina-FRONT.png" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://makerz.mx/" data-largesrc="images/makerz.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							<img src="images/logos/makerz.png" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://yogome.com/pro" data-largesrc="images/yogome.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/yogo.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.camaleonwebsites.com.php54-2.dfw1-2.websitetestlink.com/contenidos/" data-largesrc="./images/camaleon.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/camaleon-front.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/nivelesAltos.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							<img src="images/logos/nivelesAltos.png" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/Chariot-FRONT.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							<img src="images/logos/Chariot-FRONT.png" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/logos/efecto_total_screenshot.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/efecto_total_screenshot.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="./images/logos/Kiqer-FRONT.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/Kiqer-FRONT.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/naf_screenshot.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							<img src="images/logos/naf_screenshot.png" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/Skyrocket-FRONT.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							<img src="images/logos/Skyrocket-FRONT.png" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/tu2_screenshot.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/tu2_screenshot.png" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/thumbs-up-3-FRONT.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+							<img src="images/logos/thumbs-up-3-FRONT.png" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/nepo.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							<img src="images/logos/nepo.png" alt="img03"/>
+						</a>
+					</li>
+					<li>
+						<a href="" data-largesrc="images/logos/capshi.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/logos/capshi.png" alt="img01"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		<div id="ilustrcion" class="fixed">
+				<video autoplay loop controls tabindex="0">
+  					<source src="./images/grafitti.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				</video>
+			</div>
+			<div class="section ilustracion">
+				<p class="nameSection">Ilustración y Retoque Digital</p>
+				<p>Apasionado del trabajo en equipo con profesionistas que aporten dinámicas que impacten positivamente en nuestra sociedad, a través de; innovación, creatividad y tecnología. Para así incrementar mis conocimientos y poder agregar un valor productivo a la empresa.</p>
+				<ul>
+					<li><a href="#" target="blank"><img src="./images/logos/beba.png"></a></li>
+					<li><a href="#"  target="blank"><img src="./images/logos/geisha.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/babas.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/badboy.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/ares.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/ball.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/boys.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/don.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/iron.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/model.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/monstruo.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/lebron.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/cookie.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/marco.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/angel.png"></a></li>
+					<li><a href="#" target="blank"><img src="./images/logos/rey.png"></a></li>
+				</ul>
+				<div id="contacto">
+					<p class="nameSection">Contacto</p>
+				</div>	
+			</div>
+		</div><!-- /container -->
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+			
+		</script>
+	</body>
+</html>
