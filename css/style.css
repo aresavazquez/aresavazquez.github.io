@@ -482,3 +482,33 @@ button.trigger span::before {
 		display: none;
 	}
 }
+@media screen and (max-width: 670px) {
+	.intro-effect-sidefixed .content {
+	  	width: 100%;
+	  	margin-left: 0;
+		padding: 0; 
+	}
+	.intro-effect-sidefixed .bg-img::after {
+	  	width: 100%;
+	}
+	.content .title{
+		padding: 0 20px;
+	}
+	.container .fixed {
+	  	background: none;
+	  	height: auto;
+	}
+	.container .section .nameSection{
+		padding: 50px 20px 0;
+	}
+	.container .section p{
+		padding: 50px 20px;
+	}
+	.intro-effect-sidefixed .codrops-demos{
+		height: auto;
+	}
+	.intro-effect-sidefixed .codrops-demos a{
+		font-size: 21px;
+		display: block;
+	}
+}
