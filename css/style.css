@@ -85,6 +85,7 @@ html, body, .container, .header {
 .title h1,
 .title p.subline {
 	line-height: 1;
+	color: #F1EEDA;
 }
 
 .title p.subline {
@@ -94,7 +95,8 @@ html, body, .container, .header {
 	padding: 0 0 2.6em;
   	font-size: 20px;
   	margin: -20px 10px 10px;
-  	color: #585a66;
+  	color: #F1EEDA;
+  	font-weight: normal;
 }
 /* Trigger Button */
 button.trigger {
@@ -105,7 +107,7 @@ button.trigger {
 	display: block;
 	margin-left: -0.5em;
 	padding: 0;
-	width: 1em;
+	width: 2em;
 	height: 1em;
 	border: none;
 	background: transparent;
@@ -113,7 +115,9 @@ button.trigger {
 	font-size: 2em;
 	cursor: pointer;
 }
-
+button.trigger img{
+	width: 50px;	
+}
 .container:not(.notrans) button.trigger {
 	-webkit-transition: opacity 0.3s 0.5s;
 	transition: opacity 0.3s 0.5s;
@@ -223,7 +227,7 @@ button.trigger span::before {
 }
 
 .intro-effect-sidefixed .bg-img::after {
-	background: #fff;
+	background: #4C565E;
 	top: 0;
 	right: 0;
 	width: 60%;
@@ -240,7 +244,6 @@ button.trigger span::before {
 .intro-effect-sidefixed .bg-img::before {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(247,214,169,0.1);
 }
 
 .intro-effect-sidefixed.modify .bg-img::before {
@@ -253,15 +256,19 @@ button.trigger span::before {
   	font-size: 18px;
   	font-weight: bold;
   	margin-bottom: 70px;
+  	background: #3C444A;
+  	height: 100px;
+  	padding-top: 35px;
 }
 
 .intro-effect-sidefixed .codrops-demos a {
-	color: #585a66;
   	padding: 30px;
   	width: 100%
 }
 .intro-effect-sidefixed .codrops-demos a:hover{
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #A8C545;
+	padding-bottom: 5px;
+	color: #F1EEDA;
 }
 .intro-effect-sidefixed .title {
 	position: relative;
@@ -280,10 +287,9 @@ button.trigger span::before {
 .intro-effect-sidefixed .title h1.name {
 	font-family: 'avenir';
 	font-weight: bold;
-	padding: 0 0 0.5em 0;
-	color: #fff;
-	border-bottom: 1px solid;
-  	margin-bottom: 50px;
+	color: #A8C545;
+	text-align: center;
+  	margin-bottom: 10px;
   	font-size: 45px;
 }
 .intro-effect-sidefixed .title h1 span {
@@ -292,13 +298,29 @@ button.trigger span::before {
 }
 .intro-effect-sidefixed .title p {
 	opacity: 0;
-	color: #585a66;
+	color: #F1EEDA;
 }
 
 .intro-effect-sidefixed.modify .title p {
 	opacity: 1;
+	color: #F1EEDA;
+	line-height: 35px;
 }
-
+.title p span{
+	color: #A8C545;
+	font-size: 20px;
+}
+.title .texto{
+	margin-top: 30px;
+}
+.subline.uni{
+	border-top: 1px solid;
+	padding-top: 10px;
+	color: #A8C545;
+}
+.title .subline{
+	text-align: center;
+}
 .intro-effect-sidefixed .content {
 	width: 60%;
 	margin-left: 40%;
@@ -325,24 +347,24 @@ button.trigger span::before {
 }
 .container .section{
 	position: relative;
-  	background: #fff;
+  	background: #4C565E;
   	width: 100%;
-  	padding-top: 50px;
 }
 .container .section .nameSection{
-	color: #585a66;
+	color: #A8C545;
   	font-size: 55px;
   	font-weight: bold;
   	text-align: center;
   	opacity: 1;
-  	padding: 0px 100px;
+  	padding: 50px 100px 0px;
 }
 .container .section p{
-	color: #000;
+	color: #F1EEDA;
 	opacity: 0.7;
 	padding: 0px 150px 40px;
 	text-align: center;
 	font-size: 22px;
+	font-weight: normal;
 }
 .container .section .ilustracion{
 	background: #8A91A5;
@@ -351,10 +373,13 @@ button.trigger span::before {
 	display: inline-flex;
   	width: 100%;
   	flex-wrap: wrap;
-  	justify-content: space-around;
+  	justify-content: center;
   	list-style: none;
-  	padding-left: 0;
+  	padding: 0 15px;
   	padding-bottom: 100px;
+}
+.section ul li{
+	padding: 6px;
 }
 .container .fixed{
 	background: url(../images/5.jpg)no-repeat;
@@ -364,6 +389,30 @@ button.trigger span::before {
 }
 .container .fixed video{
 	width: 100%;
+}
+.ilustracion .pantalla{
+	background-color: rgba(0, 0, 0, 0.8);
+  	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	top: 0;
+  	bottom: 0;
+  	display: none;
+  	opacity: 0;
+}
+.ilustracion .close{
+	width: 30px;
+	top: 50px;
+	position: absolute;
+	right: 50px;
+	width: 30px;
+}
+.ilustracion .img{
+	width: 600px;
+	margin: 100px;
+}
+#contacto{
+	background: #3C444A;
 }
 /* Media Queries */
 @media screen and (max-width: 47em) {

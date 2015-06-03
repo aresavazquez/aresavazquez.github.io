@@ -139,8 +139,12 @@ $(document).on('ready', function(){
 		window.addEventListener( 'scroll', scrollPage );
 		trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 	})();
-	$('.trigger').on('click', function(e){
-		//TweenMax.to()
-		$('.name').css({color: '#585a66'})
+	$('.img1').on('click', function(){
+		TweenLite.to('.ilustracion-1', 1, { ease: Bounce.easeOut, x: -500, alpha: 1});
+		$('.ilustracion-1').css({display: 'block', left: 500, alpha: 1});
+	});
+	$('.close').on('click', function(){
+		TweenLite.to('.pantalla', 1, { ease: Bounce.easeOut, x: 500, alpha: 1});
+		$('.pantalla').css({display: 'none', left: -500, alpha: 0});
 	});
 }); 
