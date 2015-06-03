@@ -101,22 +101,25 @@ html, body, .container, .header {
 /* Trigger Button */
 button.trigger {
 	position: fixed;
-	bottom: 40px;
-	left: 50%;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
 	z-index: 5000;
 	display: block;
-	margin-left: -0.5em;
 	padding: 0;
 	width: 2em;
-	height: 1em;
+	height: 2em;
 	border: none;
 	background: transparent;
 	color: transparent;
 	font-size: 2em;
 	cursor: pointer;
+
 }
 button.trigger img{
-	width: 50px;	
+	width: 50px;
+	padding-top: 30px;	
 }
 .container:not(.notrans) button.trigger {
 	-webkit-transition: opacity 0.3s 0.5s;
@@ -329,7 +332,7 @@ button.trigger span::before {
 
 .intro-effect-sidefixed .content div {
 	position: relative;
-	margin: 70px 0;
+	margin: 30px 0;
 	color: #E4EBF2;
 }
 
@@ -510,5 +513,38 @@ button.trigger span::before {
 	.intro-effect-sidefixed .codrops-demos a{
 		font-size: 21px;
 		display: block;
+	}
+	.pantalla .ilustracion-1 .img {
+	  	width: 280px;
+	  	margin: 150px 10px;
+	}
+	.container .section ul {
+  		display: inline-flex;
+  		width: 100%;
+  		flex-wrap: wrap;
+  		list-style: none;
+  		padding: 0;
+  		padding-bottom: 0; 
+	}
+	.section ul li {
+	  	padding: 3px;
+	  	width: 150px;
+	}
+	.section ul li img {
+	  	width: 95%;
+	}
+	.og-grid {
+		list-style: none;
+		padding: 0px;
+		width: 100%;
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.og-grid li{
+		width: 150px;
+	}
+	.og-grid li img{
+		width: 95%;
 	}
 }
