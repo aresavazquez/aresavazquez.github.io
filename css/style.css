@@ -419,8 +419,14 @@ button.trigger span::before {
 	background: #3C444A;
 }
 .frase{
-	display: none
+	display: block;
 }
+.frase .imgText{
+	width: 50%;
+  	margin: auto;
+  	display: block;
+}
+
 /* Media Queries */
 @media screen and (max-width: 47em) {
 	.title, .content {
