@@ -556,11 +556,11 @@ button.trigger span::before {
 	}
 	.frase{
 		background: #2D2C41;
-  		padding: 70px 10px;
+  		padding: 110px 10px;
   		display: block;
 	}
 	.frase .imgText{
-		width: 90%;
+		width: 80%;
 		margin: auto;
 		display: block;
 	}
@@ -570,5 +570,16 @@ button.trigger span::before {
 	}
 	.content .estudios .diplomados{
 		text-align: center;
+	}
+	.ilustracion .close {
+	  	top: 50px;
+	  	position: absolute;
+	  	right: 0px;
+	  	width: 30px;
+	  	left: 0;
+	  	margin: auto;
+	}
+	.ilustracion .img {
+	  	margin: 40px;
 	}
 }
