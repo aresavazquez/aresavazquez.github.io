@@ -139,12 +139,15 @@ $(document).on('ready', function(){
 		window.addEventListener( 'scroll', scrollPage );
 		trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 	})();
-	$('.img1').on('click', function(){
-		TweenLite.to('.ilustracion-1', 1, { ease: Bounce.easeOut, x: -500, alpha: 1});
-		$('.ilustracion-1').css({display: 'block', left: 500, alpha: 1});
+	$('.img1 a').on('click', function(){
+		TweenLite.set('.ilustracion-1', {x: -500, alpha: 0});
+		TweenLite.to('.ilustracion-1', 1, { ease: Bounce.easeOut, x: 0, alpha: 1});
+		$('.ilustracion-1').css({display: 'flex'});
 	});
 	$('.close').on('click', function(){
-		TweenLite.to('.pantalla', 1, { ease: Bounce.easeOut, x: 500, alpha: 1});
-		$('.pantalla').css({display: 'none', left: -500, alpha: 0});
+		console.log ('funciona')
+		TweenLite.to('.pantalla', .5, { ease: Back.easeIn, x: -500, alpha: 0, onComplete: function(){
+			$('.pantalla').css({display: 'none'});
+		}});
 	});
 }); 
