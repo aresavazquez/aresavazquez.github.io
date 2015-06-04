@@ -49,6 +49,7 @@
 .og-expander-inner {
 	padding: 50px 30px;
 	height: 100%;
+	background: #C12C42;
 }
 
 .og-close {
@@ -96,7 +97,9 @@
 .og-details {
 	padding: 0 40px 0 20px;
 }
-
+.og-details h3{
+	color: #fff;
+}
 .og-fullimg {
 	text-align: center;
 }
@@ -116,22 +119,23 @@
 
 .og-details p {
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 22px;
-	color: #999;
+	font-size: 22px;
+	line-height: 40px;
+	color: #fff;
 }
 
 .og-details a {
 	font-weight: 700;
-	font-size: 16px;
-	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 10px 20px;
-	border: 3px solid #333;
 	display: inline-block;
 	margin: 30px 0 0;
 	outline: none;
+	color: #fff;
+	line-height: 40px;
+	font-size: 22px;
+	border: 3px solid #fff;
 }
 
 .og-details a::before {
@@ -180,9 +184,9 @@
 
 @media screen and (max-width: 830px) {
 
-	.og-expander h3 { font-size: 32px; }
-	.og-expander p { font-size: 20px; }
-	.og-expander a { font-size: 12px; }
+	.og-expander h3 { font-size: 40px; text-align: center; }
+	.og-expander p { font-size: 22px; text-align: center;}
+	.og-expander a { font-size: 16px; text-align: center;margin: auto; display: block; margin-top: 50px;}
 
 }
 
