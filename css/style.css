@@ -418,6 +418,9 @@ button.trigger span::before {
 #contacto{
 	background: #3C444A;
 }
+.frase{
+	display: none
+}
 /* Media Queries */
 @media screen and (max-width: 47em) {
 	.title, .content {
@@ -509,7 +512,7 @@ button.trigger span::before {
 		padding: 50px 20px;
 	}
 	.intro-effect-sidefixed .codrops-demos{
-		height: auto;
+		display: none;
 	}
 	.intro-effect-sidefixed .codrops-demos a{
 		font-size: 21px;
@@ -547,5 +550,20 @@ button.trigger span::before {
 	}
 	.og-grid li img{
 		width: 95%;
+	}
+	.container .fixed video{
+		display: none;
+	}
+	.frase{
+		background: #3C444A;
+  		height: 650px;
+  		padding-top: 60px;
+  		display: block;
+  		box-shadow: inset 0 1px 10px rgba(0,0,0,0.5),inset 0 -1px 10px rgba(0,0,0,0.5)
+	}
+	.frase .imgText{
+		width: 90%;
+		margin: auto;
+		display: block;
 	}
 }
