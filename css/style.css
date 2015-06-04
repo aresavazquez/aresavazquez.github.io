@@ -558,11 +558,17 @@ button.trigger span::before {
 		background: #2D2C41;
   		padding: 70px 10px;
   		display: block;
-  		box-shadow: inset 0 1px 10px rgba(0,0,0,0.5),inset 0 -1px 10px rgba(0,0,0,0.5)
 	}
 	.frase .imgText{
 		width: 90%;
 		margin: auto;
 		display: block;
+	}
+	.intro-effect-sidefixed.modify .title p {
+	  	font-size: 21px;
+	  	text-align: center;
+	}
+	.content .estudios .diplomados{
+		text-align: center;
 	}
 }
