@@ -139,15 +139,25 @@ $(document).on('ready', function(){
 		window.addEventListener( 'scroll', scrollPage );
 		trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 	})();
-	$('.img1 a').on('click', function(){
-		TweenLite.set('.ilustracion-1', {x: -500, alpha: 0});
-		TweenLite.to('.ilustracion-1', 1, { ease: Bounce.easeOut, x: 0, alpha: 1});
-		$('.ilustracion-1').css({display: 'flex'});
+
+	// PANTALLAS OCULTAS
+	$('.imagen a').on('click', function(){
+		var pantalla =  $(this).parent().find('.pantalla');
+		TweenLite.set(pantalla, {x: -500, alpha: 0});
+		TweenLite.to(pantalla, 1, { ease: Bounce.easeOut, x: 0, alpha: 1});
+		$(pantalla).css({display: 'flex'});
 	});
 	$('.close').on('click', function(){
 		console.log ('funciona')
 		TweenLite.to('.pantalla', .5, { ease: Back.easeIn, x: -500, alpha: 0, onComplete: function(){
 			$('.pantalla').css({display: 'none'});
 		}});
+	});
+	// MENU
+	$(window).on('scroll', function(){
+		var currentScroll = $('.codrops-demos').scrollTop(); // menu
+		if (window.scrollTop < 0){
+			$('.codrops-demos').css({positio: 'fixed'});
+		};
 	});
 }); 

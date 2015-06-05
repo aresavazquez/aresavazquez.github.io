@@ -361,6 +361,9 @@ button.trigger span::before {
   	opacity: 1;
   	padding: 50px 100px 0px;
 }
+.container .section .ilustre{
+	padding: 0 100px 0px;
+}
 .container .section p{
 	color: #F1EEDA;
 	opacity: 0.7;
@@ -415,6 +418,9 @@ button.trigger span::before {
 	width: 600px;
 	margin: 100px;
 }
+.ilustracion .vertical{
+	width: 400px;
+}
 #contacto{
 	background: #3C444A;
 }
@@ -425,6 +431,9 @@ button.trigger span::before {
 	width: 50%;
   	margin: auto;
   	display: block;
+}
+.frase .monster{
+	width: 75%;
 }
 
 /* Media Queries */
