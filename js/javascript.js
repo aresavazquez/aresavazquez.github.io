@@ -153,11 +153,28 @@ $(document).on('ready', function(){
 			$('.pantalla').css({display: 'none'});
 		}});
 	});
-	// MENU
-	$(window).on('scroll', function(){
-		var currentScroll = $('.codrops-demos').scrollTop(); // menu
-		if (window.scrollTop < 0){
-			$('.codrops-demos').css({positio: 'fixed'});
+	// MENU SCROLL PHONE
+	var menu = $('.codrops-demos' ).offset().top;
+	var show = false; 
+	$(window).scroll( function(){
+		console.log($(window).scrollTop());
+		console.log($('.codrops-demos' ).offset().top);
+		var scroll = $(window).scrollTop();
+		if (scroll > menu){
+			if (show == false){
+				show = true;
+				$('.codrops-demos').addClass('scroll');
+				TweenLite.from('.codrops-demos', .5, {css:{top: -100}});
+			}
+			
+		//}else{
+		//	$('.codrops-demos').removeClass('scroll')
+		};
+		if(scroll < menu - 125){
+			if(show == true){
+				show = false;
+				$('.codrops-demos').removeClass('scroll');
+			}
 		};
 	});
 }); 

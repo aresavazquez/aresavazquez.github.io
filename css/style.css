@@ -435,7 +435,13 @@ button.trigger span::before {
 .frase .monster{
 	width: 75%;
 }
-
+.scroll{
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 1;
+}
 /* Media Queries */
 @media screen and (max-width: 47em) {
 	.title, .content {
@@ -527,7 +533,7 @@ button.trigger span::before {
 		padding: 50px 20px;
 	}
 	.intro-effect-sidefixed .codrops-demos{
-		display: none;
+
 	}
 	.intro-effect-sidefixed .codrops-demos a{
 		font-size: 21px;
