@@ -263,6 +263,9 @@ button.trigger span::before {
   	height: 100px;
   	padding-top: 35px;
 }
+.intro-effect-sidefixed .codrops-demos img{
+	display: none;
+}
 .intro-effect-sidefixed .menuMobile{
 	text-align: center;
 	padding-bottom: 40px;
@@ -379,7 +382,7 @@ button.trigger span::before {
 .container .section p{
 	color: #F1EEDA;
 	opacity: 0.7;
-	padding: 0px 150px 40px;
+	padding: 0px 250px 40px;
 	text-align: center;
 	font-size: 22px;
 	font-weight: normal;
@@ -435,7 +438,28 @@ button.trigger span::before {
 	width: 400px;
 }
 #contacto{
-	background: #3C444A;
+	padding: 50px;
+}
+#contacto div{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#contacto div a {
+	color: #C12C42;
+  	font-weight: bold;
+  	font-size: 20px;
+  	border: 1px solid;
+	padding: 10px;
+	width: 250px;
+	text-align: center;
+	margin: 12px;
+}
+#contacto div .nameContact{
+	width: 100%
+}
+#contacto div a:hover {
+	color: #fff;
 }
 .frase{
 	display: block;
@@ -447,6 +471,7 @@ button.trigger span::before {
 }
 .frase .monster{
 	width: 75%;
+	margin-bottom: -160px;
 }
 .scroll{
 	position: fixed;
@@ -546,11 +571,20 @@ button.trigger span::before {
 		padding: 50px 20px;
 	}
 	.intro-effect-sidefixed .codrops-demos{
-		
+		display: flex;
+		justify-content: center;
+	}
+	.intro-effect-sidefixed .codrops-demos .igual{
+		display: block;
+		width: 50px;
+	}
+	.mobileMenu{
+		display: block;
 	}
 	.intro-effect-sidefixed .codrops-demos a{
 		font-size: 21px;
 		display: block;
+		display: none;
 	}
 	.pantalla .ilustracion-1 .img {
 	  	width: 280px;
@@ -597,7 +631,7 @@ button.trigger span::before {
 		width: 100%;
 		margin: auto;
 		display: block;
-		padding-top: 100px;
+		margin-bottom: -95px;
 	}
 	.intro-effect-sidefixed.modify .title p {
 	  	font-size: 21px;

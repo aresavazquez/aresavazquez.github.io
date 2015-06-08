@@ -177,5 +177,8 @@ $(document).on('ready', function(){
 			}
 		};
 	});
+	$('.igual').on ('click', function(){
+		$('.codrops-demos a').css({display: 'block'})
+	});
 	// MENU NAVEGACION
 }); 
