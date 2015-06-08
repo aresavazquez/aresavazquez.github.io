@@ -182,6 +182,7 @@ $(document).on('ready', function(){
 	$('.igual').on ('click', function(){
 		if (codropsDemosAbierto == true ){
 			codropsDemosAbierto = false;
+			TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
 			$('.codrops-demos a').css({display: 'none'})
 		}else{
 			TweenLite.set('.codrops-demos a', {ease: Bounce.easeIn, y:0, alpha: 1});

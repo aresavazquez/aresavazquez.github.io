@@ -574,7 +574,8 @@ button.trigger span::before {
 		display: block;
 		justify-content: center;
 		height: auto;
-
+		padding: 0;
+		height: auto;
 	}
 	.intro-effect-sidefixed .codrops-demos .igual{
 		display: block;
