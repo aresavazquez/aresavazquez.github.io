@@ -218,7 +218,6 @@ button.trigger span::before {
 }
 
 .intro-effect-sidefixed .bg-img img {
-	left: auto;
 	right: 0;
 }
 
