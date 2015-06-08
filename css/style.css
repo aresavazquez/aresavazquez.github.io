@@ -571,19 +571,24 @@ button.trigger span::before {
 		padding: 50px 20px;
 	}
 	.intro-effect-sidefixed .codrops-demos{
-		display: flex;
+		display: block;
 		justify-content: center;
+		height: 100%;
 	}
 	.intro-effect-sidefixed .codrops-demos .igual{
 		display: block;
 		width: 50px;
+		margin: auto;
+	}
+	.intro-effect-sidefixed .codrops-demos .mabout{
+		padding-top: 60px;
 	}
 	.mobileMenu{
 		display: block;
 	}
 	.intro-effect-sidefixed .codrops-demos a{
 		font-size: 21px;
-		display: block;
+		padding: 25px;
 		display: none;
 	}
 	.pantalla .ilustracion-1 .img {
@@ -632,6 +637,9 @@ button.trigger span::before {
 		margin: auto;
 		display: block;
 		margin-bottom: -95px;
+	}
+	.frase .textodiseno{
+		margin-bottom: -15px;
 	}
 	.intro-effect-sidefixed.modify .title p {
 	  	font-size: 21px;
