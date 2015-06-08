@@ -571,7 +571,7 @@ button.trigger span::before {
 		padding: 50px 20px;
 	}
 	.intro-effect-sidefixed .codrops-demos{
-		display: none;
+		display: block;
 		justify-content: center;
 		height: auto;
 
