@@ -283,8 +283,7 @@ button.trigger span::before {
   	color: #fff;
 }
 .intro-effect-sidefixed .codrops-demos a:hover{
-	padding-bottom: 5px;
-	color: #57585B;
+	color: #A8C545;
 }
 .intro-effect-sidefixed .title {
 	position: relative;
@@ -565,7 +564,7 @@ button.trigger span::before {
 	  	height: auto;
 	}
 	.container .section .nameSection{
-		padding: 50px 20px 0;
+		padding: 85px 20px 0;
 	}
 	.container .section p{
 		padding: 50px 20px;
@@ -574,7 +573,7 @@ button.trigger span::before {
 		display: block;
 		justify-content: center;
 		height: auto;
-		padding: 0;
+		padding: 10px;
 		height: auto;
 	}
 	.intro-effect-sidefixed .codrops-demos .igual{
