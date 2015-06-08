@@ -170,7 +170,7 @@ $(document).on('ready', function(){
 		//}else{
 		//	$('.codrops-demos').removeClass('scroll')
 		};
-		if(scroll < menu - 125){
+		if(scroll < menu - 25){
 			if(show == true){
 				show = false;
 				$('.codrops-demos').removeClass('scroll');
