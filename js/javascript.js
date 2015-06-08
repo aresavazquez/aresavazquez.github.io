@@ -179,10 +179,6 @@ $(document).on('ready', function(){
 	});
 	$('.igual').on ('click', function(){
 		$('.codrops-demos a').css({display: 'block'})
-		if('.igual' == true){
-			show = false;
-			$('.codrops-demos a').css({display: 'none'})
-		}
 	});
 	// MENU NAVEGACION
 }); 
