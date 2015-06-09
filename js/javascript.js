@@ -180,7 +180,7 @@ $(document).on('ready', function(){
 	 //DESPLIEGUE DE MENU
 	var codropsDemosAbierto = false;
 	$('.igual').on ('click', function(){
-		if ($(window).width()>670){
+		if ($(window).width()<670){
 			if (codropsDemosAbierto == true ){
 				codropsDemosAbierto = false;
 				TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
