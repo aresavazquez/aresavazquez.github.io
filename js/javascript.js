@@ -180,20 +180,44 @@ $(document).on('ready', function(){
 	 //DESPLIEGUE DE MENU
 	var codropsDemosAbierto = false;
 	$('.igual').on ('click', function(){
-		if (codropsDemosAbierto == true ){
-			codropsDemosAbierto = false;
-			TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
-			$('.codrops-demos a').css({display: 'none'})
-		}else{
-			TweenLite.set('.codrops-demos a', {ease: Bounce.easeIn, y:0, alpha: 1});
-			TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: -100});
-			$('.codrops-demos a').css({display: 'block'})
-			codropsDemosAbierto = true;
+		if ($(window).width()>670){
+			if (codropsDemosAbierto == true ){
+				codropsDemosAbierto = false;
+				TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
+				$('.codrops-demos a').css({display: 'none'})
+			}else{
+				TweenLite.set('.codrops-demos a', {ease: Bounce.easeIn, y:0, alpha: 1});
+				TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: -100});
+				$('.codrops-demos a').css({display: 'block'})
+				codropsDemosAbierto = true;
+			}
 		}
-	});
-	$('.codrops-demos a').on('click', function(){
-		TweenLite.to('.codrops-demos a', .5, {y: -100, alpha: 0, onComplete: function(){
-			$('.codrops-demos a').css({display: 'none'})
-		}});
+		$('.codrops-demos a').on('click', function(){
+			TweenLite.to('.codrops-demos a', .5, {y: -100, alpha: 0, onComplete: function(){
+				$('.codrops-demos a').css({display: 'none'})
+			}});
+		});
 	});
 }); 
+
+
+
+//	 //DESPLIEGUE DE MENU
+//var codropsDemosAbierto = false;
+//$('.igual').on ('click', function(){
+//	if (codropsDemosAbierto == true ){
+//		codropsDemosAbierto = false;
+//		TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
+//		$('.codrops-demos a').css({display: 'none'})
+//	}else{
+//		TweenLite.set('.codrops-demos a', {ease: Bounce.easeIn, y:0, alpha: 1});
+//		TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: -100});
+//		$('.codrops-demos a').css({display: 'block'})
+//		codropsDemosAbierto = true;
+//	}
+//});
+//$('.codrops-demos a').on('click', function(){
+//	TweenLite.to('.codrops-demos a', .5, {y: -100, alpha: 0, onComplete: function(){
+//		$('.codrops-demos a').css({display: 'none'})
+//	}});
+//});
