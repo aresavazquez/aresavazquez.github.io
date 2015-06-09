@@ -430,7 +430,7 @@ button.trigger span::before {
 	width: 30px;
 }
 .ilustracion .img{
-	margin: 100px;
+	width: 95%;
 }
 .ilustracion .vertical{
 	width: 400px;

@@ -170,7 +170,7 @@ $(document).on('ready', function(){
 		//}else{
 		//	$('.codrops-demos').removeClass('scroll')
 		};
-		if(scroll < menu - 25){
+		if(scroll < menu - 125){
 			if(show == true){
 				show = false;
 				$('.codrops-demos').removeClass('scroll');
@@ -179,8 +179,8 @@ $(document).on('ready', function(){
 	});
 	 //DESPLIEGUE DE MENU
 	var codropsDemosAbierto = false;
-	$('.igual').on ('click', function(){
-		if ($(window).width()<670){
+	if ($(window).width()<670){
+		$('.igual').on ('click', function(){
 			if (codropsDemosAbierto == true ){
 				codropsDemosAbierto = false;
 				TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
@@ -191,33 +191,42 @@ $(document).on('ready', function(){
 				$('.codrops-demos a').css({display: 'block'})
 				codropsDemosAbierto = true;
 			}
-		}
-		$('.codrops-demos a').on('click', function(){
-			TweenLite.to('.codrops-demos a', .5, {y: -100, alpha: 0, onComplete: function(){
-				$('.codrops-demos a').css({display: 'none'})
-			}});
+			$('.codrops-demos a').on('click', function(){
+				TweenLite.to('.codrops-demos a', .5, {y: -100, alpha: 0, onComplete: function(){
+					$('.codrops-demos a').css({display: 'none'})
+				}});
+			});
 		});
+	}
+	////
+	//// 
+	////
+	//SCROLL DE PAGINA es el movimiento de transición
+	$('.sectionWeb').on('click', function(e){
+		e.preventDefault (); // para no cambiar enseguida y permita hacer el efecto
+		var top = $('#web').offset().top; // cambia el valor del top
+		console.log($('#web').offset().top);// para mostrar la posiscion en top en la que se ecuentra
+		TweenLite.to(window, 2, {scrollTo:{y: top}, ease:Power2.easeOut});
 	});
+
+	$('.sectionCartoon').on('click', function(e){
+		e.preventDefault ();
+		var top = $('#cartoon').offset().top;
+		TweenLite.to(window, 2, {scrollTo:{y: top}, ease:Power2.easeOut});
+	});
+
+	$('.mabout').on('click', function(e){
+		e.preventDefault ();
+		var top = $('#aboutMe').offset().top;
+		TweenLite.to(window, 2, {scrollTo:{y: top}, ease:Power2.easeOut});
+	});
+
+	$('.sectionContact').on('click', function(e){
+		e.preventDefault ();
+		var top = $('#contacto').offset().top;
+		TweenLite.to(window, 2, {scrollTo:{y: top}, ease:Power2.easeOut});
+	});
+
 }); 
 
 
-
-//	 //DESPLIEGUE DE MENU
-//var codropsDemosAbierto = false;
-//$('.igual').on ('click', function(){
-//	if (codropsDemosAbierto == true ){
-//		codropsDemosAbierto = false;
-//		TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: 0});
-//		$('.codrops-demos a').css({display: 'none'})
-//	}else{
-//		TweenLite.set('.codrops-demos a', {ease: Bounce.easeIn, y:0, alpha: 1});
-//		TweenLite.from('.codrops-demos a', .5, {ease: Bounce.easeOut, y: -100});
-//		$('.codrops-demos a').css({display: 'block'})
-//		codropsDemosAbierto = true;
-//	}
-//});
-//$('.codrops-demos a').on('click', function(){
-//	TweenLite.to('.codrops-demos a', .5, {y: -100, alpha: 0, onComplete: function(){
-//		$('.codrops-demos a').css({display: 'none'})
-//	}});
-//});
