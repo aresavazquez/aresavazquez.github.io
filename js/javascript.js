@@ -218,7 +218,7 @@ $(document).on('ready', function(){
 	$('.mabout').on('click', function(e){
 		e.preventDefault ();
 		var top = $('#aboutMe').offset().top;
-		TweenLite.to(window, 2, {scrollTo:{y: top}, ease:Power2.easeOut});
+		TweenLite.to(window, 2, {scrollTo:{y: 0}, ease:Power2.easeOut});
 	});
 
 	$('.sectionContact').on('click', function(e){
